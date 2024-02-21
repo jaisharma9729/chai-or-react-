@@ -5,7 +5,10 @@ const Header = () => {
 
     const increase  = () => {
         if (count < 20) {
-            setCount(count +1)
+            setCount(prevCount => prevCount +1)
+            setCount(prevCount => prevCount +1)
+            setCount(prevCount => prevCount +1)
+            setCount(prevCount => prevCount +1)
         }
     }
     const decrease =  () => {
